@@ -1,0 +1,101 @@
+@import './base.css';
+
+.form{
+    width: 350px;
+    height: 450px;
+    background-color: var(--morado-oscuro2);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.262);
+    padding-top: 2rem;
+    border: 1px solid var(--morado-brillante);
+}
+.form h3{
+    font-size: 25px;
+    font-family: 'Valorant';
+    letter-spacing: .1rem;
+    color: var(--toque-brillante);
+    margin-top: -.5rem;
+
+}
+
+
+.form input{
+    width: 80%;
+    height: 2rem;
+    border-radius: 5px;
+    border: 1px solid var(--morado-oscuro1);
+    padding: 0.5rem;
+    background-color: var(--morado-oscuro1);
+    color: var(--toque-brillante);
+    font-family: 'lexend';
+}
+
+input:focus{
+    border: 1px solid var(--morado-brillante);
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.466);
+
+}
+
+.logo{
+    width: 20%;
+
+}
+
+a, p{
+    text-decoration: none;
+    color: var(--toque-brillante);
+    font-family: 'lexend';
+    margin-bottom: -0.5rem;
+    font-size: 12px;
+    transition: all .3s ease-in-out;
+
+}
+
+a:hover, p:hover{
+    color: white;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+
+
+.form button{
+    width: 80%;
+    height: 2rem;
+    border-radius: 5px;
+    border: 1px solid var(--morado-brillante);
+    background-color: var(--morado-oscuro1);
+    color: white;
+    font-family: 'lexend';
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+button:hover{
+    background-color: var(--morado-brillante);
+    color: var(--morado-oscuro1);
+    transition: all .3s ease-in-out;
+    box-shadow:  0 0 10px var(--morado-brillante);
+}
+
+/* h2{
+    font-size: 25px;
+    font-family: 'Valorant';
+    letter-spacing: .1rem;
+    color: var(--toque-brillante);
+    margin-bottom: 1rem;
+} */
+
+.none{
+    display: none;
+}
+.flex{
+    display: flex;
+}

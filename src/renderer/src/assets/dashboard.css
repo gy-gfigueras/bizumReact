@@ -1,0 +1,459 @@
+.flex {
+  display: flex;
+}
+
+.none {
+  display: none;
+}
+
+.MainPage {
+  background-color: var(--morado-oscuro1);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: var(--morado-oscuro1);
+}
+
+.leftSection {
+  width: 30%;
+  height: 100%;
+  background-color: var(--morado-oscuro1);
+  display: flex;
+  padding-top: 1%;
+  flex-direction: column;
+  gap: .5rem;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1%;
+  /* overflow: hidden; */
+}
+
+.profileItems {
+  display: flex;
+  width: 100%;
+  height: 80%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: .7rem;
+}
+
+.rightSection {
+  width: 70%;
+  height: 100%;
+  background-color: var(--morado-oscuro2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position : relative;
+  overflow: hidden;
+}
+
+.rightSection::after{
+  content: '';
+  position: absolute;
+  left: 0%;
+  top: 90%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--morado-oscuro1);
+  filter: blur(30px);
+  z-index: 0;
+}
+
+.userBox {
+  width: 90%;
+  height: 17%;
+  background-color: var(--morado-oscuro2);
+  border-radius: 16px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0;
+  color: var(--toque-brillante);
+  padding: 0;
+  gap: 1rem;
+  border: 1px solid var(--morado-brillante);
+  position: relative;
+  overflow: hidden;
+}
+
+.userBox::after{
+  content: '';
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--morado-brillante);
+  filter: blur(30px);
+  z-index: 1;
+  transition: all .5s ease-in-out;
+  transform: translate(0px, 20px);
+  z-index: -1;
+}
+
+.userBox, .accountItem, .money, .actualizarCuenta {
+  transform : scale(1);
+  transition: all .5s ease;
+
+}
+.userBox:hover, .accountItem:hover, .money:hover, .actualizarCuenta:hover {
+  /* transform : scale(1.05); */
+  transition: all .5s ease;
+  /* box-shadow: 0px 0px 10px 0px rgba(255, 52, 248, 0.448); */
+  border: 1px solid var(--toque-brillante);
+  color: white;
+
+
+}
+
+.img {
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  align-self: center;
+  justify-self: center;
+  border-radius: 50%;
+  border: 2px solid var(--morado-oscuro2);
+
+}
+.img:hover{
+  border: 2px solid var(--morado-brillante);
+}
+
+.userBox ul {
+  width: 68%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+
+}
+
+.accountItem {
+  width: 90%;
+  height: 17%;
+  background-color: var(--morado-oscuro2);
+  border-radius: 16px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0;
+  color: var(--toque-brillante);
+  padding: 0;
+  gap: 1rem;
+}
+
+.cerrarSesion {
+  width: 90%;
+  height: 10%;
+  background-color: var(--morado-oscuro2);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  color: var(--toque-brillante);
+  padding: 0;
+  font-size: 10px;
+  border: 1px solid red;
+  color: white;
+  transition: .5s;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.cerrarSesion:hover {
+  background-color: red;
+  color: red;
+  transition: .5s ease;
+  box-shadow: 0px 0px 10px 0px rgba(255, 0, 0, 0.448);
+  color: var(--morado-oscuro1);
+}
+
+.accountUl {
+  width: 100%;
+  height: 100%;
+  background-color: var(--morado-oscuro2);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  color: var(--toque-brillante);
+  border: 1px solid var(--morado-brillante);
+  padding: 0;
+  transition: all .5s ease;
+
+}
+
+.money {
+  width: 90%;
+  height: 17%;
+  background-color: var(--morado-oscuro2);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0;
+  color: var(--toque-brillante);
+  border: 1px solid var(--morado-brillante);
+  padding: 0;
+  gap: 1rem;
+  transition: all .5s ease;
+}
+
+.moneyIcon{
+  font-size: 20px;
+}
+
+.money:hover,
+.accountUl:hover {
+  color: white;
+  transition: all .5s ease;
+
+}
+
+.money p {
+  font-size: 20px;
+}
+
+.card {
+  width: 1000%;
+}
+
+.rccs {
+  width: 90% !important;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  background-color: transparent !important;
+  background-color: var(--morado-oscuro1) !important;
+  border: 1px solid var(--morado-brillante) !important;
+  border-radius: 20px !important;
+  transition: .5s;
+
+  backdrop-filter: blur(300px);
+  position: relative;
+  z-index: 3 !important;
+
+}
+
+.rccs:hover {
+  transition: .5s;
+  transform: translateX(30px);
+  z-index: 3 !important;
+
+}
+
+.rccs__card {
+  align-self: left;
+  justify-self: left;
+  width: 360px !important;
+  z-index: 3 !important;
+
+}
+
+.bizum {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+  background-color: var(--morado-oscuro1);
+  border-radius: 20px;
+  gap: 1rem;
+  border: 1px solid var(--morado-brillante);
+  transition: all .3s ease-in-out;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.262);
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.bizum::after{
+  content: '';
+  position: absolute;
+  background-color: rgba(131, 0, 131, 0.811);
+  width: 100%;
+  height: 50%;
+  top: 95%;
+  left: 0%;
+  filter: blur(40px);
+  z-index: -1;
+}
+
+
+
+.bizum h1 {
+  color: var(--morado-brillante);
+}
+
+.bizum input {
+  width: 80%;
+  height: 2rem;
+  border-radius: 5px;
+  border: 1px solid var(--morado-oscuro2);
+  padding: 0.5rem;
+  background-color: var(--morado-oscuro2);
+  color: var(--toque-brillante);
+  font-family: 'lexend';
+}
+
+.bizum button {
+  width: 80%;
+  height: 2rem;
+  border-radius: 5px;
+  border: 1px solid var(--morado-brillante);
+  background-color: var(--morado-oscuro1);
+  color: white;
+  font-family: 'lexend';
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  position: relative;
+  overflow: hidden  ;
+}
+/* 
+.bizum button:hover {
+  background-color: var(--morado-brillante);
+  color: var(--morado-oscuro1);
+  transition: all .3s ease-in-out;
+  box-shadow: 0 0 10px var(--morado-brillante);
+  
+} */
+
+.bizum button:after {
+  content: '';
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 0%;
+  height: 100%;
+  background-color: var(--morado-brillante);
+  filter: blur(30px);
+  transition: all .5s ease-in-out;
+
+  /* border-left: 1px solix white; */
+  /* border-top: 1px solid white; */
+}
+
+.bizum button:hover:after {
+  width: 100%;
+  transition: all .3s ease-in-out;
+}
+
+
+.bizum:hover {
+  transform: scale(1.1);
+  transition: all .3s ease-in-out;
+
+}
+
+.textoPlano {
+  color: var(--toque-brillante);
+}
+
+.textoPlano:hover {
+  background-color: var(--morado-oscuro2);
+  color: var(--morado-oscuro1);
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.verde {
+  color: rgb(0, 255, 0) !important;
+}
+
+.rojo {
+  color: red !important;
+}
+
+
+.actualizarCuenta {
+  width: 90%;
+  height: 10%;
+  background-color: var(--morado-oscuro2);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  color: var(--toque-brillante);
+  border: 1px solid var(--morado-brillante);
+  padding: 0;
+  gap: 1rem;
+  font-size: 10px;
+  transition: all .5s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.actualizarCuenta:after {
+  content: '';
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 10%;
+  height: 100%;
+  background-color: var(--morado-brillante);
+
+  filter: blur(30px);
+  z-index: 1;
+  transition: all .5s ease-in-out;
+  transform: translate(0px, 50px);
+
+  /* border-left: 1px solix white; */
+  /* border-top: 1px solid white; */
+}
+
+.actualizarCuenta:hover:after {
+  width: 100%;
+  transition: all .3s ease-in-out;
+  background-color: rgb(0, 255, 0);
+  transform: translate(0px, 00px);
+
+
+}
+
+.actualizarCuenta:hover {
+  color: white;
+  z-index: 0;
+  transition: all .5s ease;
+  box-shadow: 0px 0px 10px 0px rgba(1, 255, 5, 0.448);
+  border: 1px solid rgb(0, 235, 0);
+  cursor: pointer;
+}
+
+
+.bizum input:focus {
+  border: 1px solid var(--morado-brillante);
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.466);
+}
+
+.rccs__card--front{
+  background-color: transparent !important;
+  z-index: 3 !important;
+  position: relative;
+
+}

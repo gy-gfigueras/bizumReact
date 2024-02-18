@@ -1,0 +1,173 @@
+.selectAccount {
+    width: 350px;
+    height: 450px;
+    background-color: var(--morado-oscuro2);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.262);
+    padding-top: 2rem;
+    position: relative;
+    border: 1px solid var(--morado-brillante);
+}
+#selectioned{
+    height: 140px;
+}
+
+
+.accountBox {
+    width: 90%;
+    height: 20%;
+    background-color: var(--morado-oscuro1);
+    border-radius: 16px;
+    display: flex;
+    align-items: start;
+    padding-left: 16px;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+    margin: 0;
+    color: var(--toque-brillante);
+    transition: all .3s ease-in-out;
+}
+
+.accountBox:hover {
+    background-color: var(--morado-brillante);
+    transition: all .3s ease-in-out;
+    box-shadow: 0 0 10px var(--morado-brillante);
+    cursor: pointer;
+    color: var(--morado-oscuro1);
+}
+
+.buttonSelectAccount,
+.buttonCancel {
+    width: 90%;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: 1px solid var(--morado-brillante);
+    background-color: var(--morado-oscuro1);
+    color: white;
+    font-family: 'lexend';
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.loading {
+    color: var(--toque-brillante);
+}
+
+.buttonSelectAccount:hover {
+    background-color: var(--morado-brillante);
+    color: var(--morado-oscuro1);
+    transition: all .3s ease-in-out;
+    box-shadow: 0 0 10px var(--morado-brillante);
+}
+
+.buttonCancel {
+    border: 1px solid red;
+}
+
+.buttonCancel:hover {
+    background-color: red;
+    transition: all .3s ease-in-out;
+    box-shadow: 0 0 10px red;
+}
+
+.botones {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 25%;
+    gap: .5rem;
+}
+
+.introducePassword {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.introducePassword input {
+    width: 80%;
+    height: 2rem;
+    border-radius: 5px;
+    border: 1px solid var(--morado-oscuro1);
+    padding: 0.5rem;
+    background-color: var(--morado-oscuro1);
+    color: var(--toque-brillante);
+    font-family: 'lexend';
+
+}
+
+.introducePassword h3 {
+    color: var(--toque-brillante);
+}
+.createAccountButton{
+    width: 90%;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: 1px solid var(--morado-brillante);
+    background-color: var(--morado-oscuro1);
+    color: white;
+    font-family: 'lexend';
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    margin-top: -10%;
+}
+
+.createAccount{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.createAccount input{
+    width: 80%;
+    height: 2rem;
+    border-radius: 5px;
+    border: 1px solid var(--morado-oscuro1);
+    padding: 0.5rem;
+    background-color: var(--morado-oscuro1);
+    color: var(--toque-brillante);
+    font-family: 'lexend';
+    border: 1px solid var(--morado-brillante);
+}
+
+.flex {
+    display: flex;
+}
+
+.none {
+    display: none;
+}
+.green{
+    color: rgb(0, 213, 0);
+}
+.red{
+    color: red;
+}
+
+#selected {
+    border: 2px solid var(--morado-brillante);
+    color: white;
+}
+
+

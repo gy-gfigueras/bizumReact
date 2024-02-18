@@ -1,0 +1,48 @@
+:root {
+  --morado-oscuro1: #121821;
+  --morado-oscuro2: #2A1A3D;
+  --morado-oscuro3: #3B1A5B;
+  --morado-brillante: #6A48A5;
+  --toque-brillante: #AFA4CF;
+}
+
+:root {
+  --color-background: var(--ev-c-black);
+  --color-background-soft: var(--ev-c-black-soft);
+  --color-background-mute: var(--ev-c-black-mute);
+
+  --color-text: var(--ev-c-text-1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+*{
+  font-family: 'Lexend';
+}
+
+.body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: cyan;
+}
+#root{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #121821;
+}
+
+li{
+  list-style: none;
+}
